@@ -58,7 +58,7 @@ const handleValidarClick = () => {
 }
 
 export const iniciarUI = () => {
-  if (botonValidar instanceof HTMLButtonElement) {
+  if (botonValidar !== null && botonValidar !== undefined && botonValidar instanceof HTMLButtonElement) {
     botonValidar.addEventListener("click", handleValidarClick);
   }
 };
